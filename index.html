@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href='https://fonts.googleapis.com/css?family=Yanone Kaffeesatz' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand:wght@300' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Noto Sans JP' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Blog</title>
+        <style>
+            .anim {
+                text-indent: 8px;
+                color:rgb(20, 5, 5);
+            }
+            @keyframes AnimText0 {
+                0% {
+                    
+                    opacity: 1;
+                    
+                }
+                15% {
+                    
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                    content: "Mastered in Python";
+                }
+                55% {
+                    opacity: 0;
+                }
+                75% {
+                    content: "1 year of C# experience";
+                }
+               
+            }
+            .anim:before {
+                content: "1 year of C# experience";
+                animation: AnimText0 10s infinite 0s;
+            }
+        
+            .socialcon {
+                border: 1px solid white;
+                border-radius: 25px;
+                margin-left:45vw;
+                width: 8vw;
+                height: 5vh;
+                margin-top: 1vw;
+                padding-top: 5px;
+            }
+            .socialcon:hover {
+                cursor: pointer;
+                border: 1px solid black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div style="border: solid 1px outset;border-radius:25px;background-color:rgb(243, 244, 245);width: 99vw;height: 18vh;">
+            <h1 style="text-align:center; padding-top: 2vh;font-family:Quicksand;">DoctorCode | Solopia1</h1>
+            <h1 style="text-align:center;font-family:Quicksand;font-weight:300;">Discord: CaDeaux#3954</h1>
+        </div>
+        <div>
+            <button class="socialcon" style="background-color:rgb(92, 161, 218);" onclick="location.href='https://twitter.com/CommanderCoder'">
+                <h3 style="text-align: center;margin-bottom: 5vh;margin-top: 0.3vh;font-family: Quicksand;">Twitter</h3>
+            </button>
+            <button class="socialcon" style="background-color:rgb(202, 53, 53);margin-top: 0.5vw;">
+                <h3 style="text-align: center;margin-bottom: 5vh;margin-top: 0.3vh;font-family: Quicksand;" onclick="location.href='https://www.youtube.com/channel/UCTrw3cwn_xMYgU0sZnFocuQ'">Youtube</h3>
+            </button>
+            <button class="socialcon" style="background-color:rgb(107, 107, 107);margin-top: 0.5vw;">
+                <h3 style="text-align: center;margin-bottom: 5vh;margin-top: 0.3vh;font-family: Quicksand;" onclick="location.href='https://www.roblox.com/users/605707404/profile'">ROBLOX</h3>
+            </button>
+            <button class="socialcon" style="background-color:rgb(137, 105, 212);margin-top: 0.5vw;">
+                <h3 style="text-align: center;margin-bottom: 5vh;margin-top: 0.3vh;font-family: Quicksand;">Discord Server</h3>
+            </button>
+        </div>
+        <div style="border: solid 1px outset;border-radius:25px;background-color:rgb(243, 244, 245);width: 50vw;height: 20vh;">
+            <h1 style="text-align:left;padding-left:2vw; padding-top: 2vh;font-family:Noto Sans JP;">.NET Developer, Web Developer</h1>
+            <h2 style="text-align:center;font-family:Quicksand;font-weight:300;"><span class="anim"></span></h2>
+            
+        </div>
+    </body>
+</html>
