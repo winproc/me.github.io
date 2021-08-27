@@ -26,21 +26,50 @@
                 }
                 50% {
                     opacity: 1;
-                    content: "Mastered in Python";
+                    content: "Mastered in Python and Luau";
                 }
                 55% {
                     opacity: 0;
                 }
                 75% {
-                    content: "1 year of C# experience";
+                    content: "3 months of C# experience";
                 }
                
             }
             .anim:before {
-                content: "1 year of C# experience";
-                animation: AnimText0 10s infinite 0s;
+                content: "3 months of C# experience";
+                animation: AnimText0 7s infinite 0s;
             }
-        
+            #anim2 {
+                text-indent: 8px;
+                color:rgb(20, 5, 5);
+            }
+            @keyframes AnimText1 {
+                0% {
+                    
+                    opacity: 1;
+                    
+                }
+                15% {
+                    
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                    content: "Singing";
+                }
+                55% {
+                    opacity: 0;
+                }
+                75% {
+                    content: "Playing badminton";
+                }
+               
+            }
+            #anim2:before {
+                content: "Playing badminton";
+                animation: AnimText1 7s infinite 0s;
+            }
             .socialcon {
                 border: 1px solid white;
                 border-radius: 25px;
@@ -54,18 +83,30 @@
                 cursor: pointer;
                 border: 1px solid black;
             }
-            
+            .hover-dark {
+                font-family: Quicksand;
+                font-weight: 300;
+                border: 1px solid black;
+                border-radius: 10px;
+                width:10vw;
+                color: black;
+                background-color: chartreuse;
+            }
+            .hover-dark:hover {
+               
+                background-color:rgb(108, 216, 0)
+            }
         </style>
     </head>
     <body>
         
-        <div style="border: solid 1px outset;border-radius:25px;background-color:rgb(243, 244, 245);width: 99vw;height: 18vh;">
-            <h1 style="text-align:center; padding-top: 2vh;font-family:Quicksand;">DoctorCode | Solopia1</h1>
-            <h1 style="text-align:center;font-family:Quicksand;font-weight:300;">Discord: CaDeaux#3954</h1>
+        <div style="border: solid 1px outset;border-radius:25px;background-color:rgb(243, 244, 245);width: 98vw;height: 18vh;">
+            <h1 style="text-align:center; padding-top: 2vh;font-family:Quicksand;">DoctorCode</h1>
+            <h1 style="text-align:center;font-family:Quicksand;font-weight:300;">Discord: GreenApple#3954</h1>
         </div>
         <div>
             <button class="socialcon" style="background-color:rgb(92, 161, 218);" onclick="location.href='https://twitter.com/CommanderCoder'">
-                <h3 style="text-align: center;margin-bottom: 5vh;margin-top: 0.3vh;font-family: Quicksand;">Twitter</h3>
+                <h3 style="text-align: center;margin-bottom: 5vh;margin-top: 0.3vh;font-family: Quicksand;">blabla</h3>
             </button>
             <button class="socialcon" style="background-color:rgb(202, 53, 53);margin-top: 0.5vw;">
                 <h3 style="text-align: center;margin-bottom: 5vh;margin-top: 0.3vh;font-family: Quicksand;" onclick="location.href='https://www.youtube.com/channel/UCTrw3cwn_xMYgU0sZnFocuQ'">Youtube</h3>
@@ -78,9 +119,19 @@
             </button>
         </div>
         <div style="border: solid 1px outset;border-radius:25px;background-color:rgb(243, 244, 245);width: 50vw;height: 20vh;">
-            <h1 style="text-align:left;padding-left:2vw; padding-top: 2vh;font-family:Noto Sans JP;">.NET Developer, Web Developer</h1>
+            <h1 style="text-align:left;padding-left:2vw; padding-top: 2vh;font-family:Noto Sans JP;">I am a Developer.</h1>
             <h2 style="text-align:center;font-family:Quicksand;font-weight:300;"><span class="anim"></span></h2>
-            
         </div>
+        <div style="margin-left:auto;border: solid 1px outset;border-radius:25px;background-color:rgb(243, 244, 245);width: 50vw;height: 20vh;">
+            <h1 style="text-align:left;padding-left:2vw; padding-top: 2vh;font-family:Noto Sans JP;">Hobbies that I like.</h1>
+            <h2 style="text-align:center;font-family:Quicksand;font-weight:300;"><span id="anim2"></span></h2>
+        </div>
+        <header style="background-color:rgb(8, 7, 7);border: 1px solid black;border-radius:5px;margin-top:2vh;width:97vw;">
+            <h3 style="color:white;font-family:Quicksand;font-weight:300;" align="center">Contact</h3>
+        </header>
+        <h2 style="font-family:Quicksand;font-weight:300;">You can contact me via my Discord (mentioned at the top of the page) or use the following alternatives:</h2>
+        <ul>
+            <li><button class="hover-dark" onclick="window.location = 'mail.html'">Mail</button></li>
+        </ul>
     </body>
 </html>
