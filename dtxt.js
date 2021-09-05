@@ -1,9 +1,15 @@
 function RequestHeaderMessage() {
-    const aj = new XMLHttpRequest;
-    aj.addEventListener('load', function(){
-        console.log("Error while sending")
-    })
-    aj.open('GET', 'https://webappapi.shaperorblx.repl.co/?c=' + document.getElementById('mes').value)
-    aj.send()
+    const mescontb = document.getElementById('mes')
+    console.log(mescontb.validity.tooLong)
+    if (mescontb.validity.tooLong || mescontb.validity.valueMissing) {
+        console.log("Failed validity check")
+    } else {
+        const aj = new XMLHttpRequest;
+        aj.addEventListener('load', function(){
+            console.log("Error while sending")
+        })
+        aj.open('GET', 'https://webappapi.shaperorblx.repl.co/?c=' + mescontb.value)
+        aj.send()
+    }
     
 }
