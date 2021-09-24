@@ -2,4 +2,4 @@
 
 Source to the webpage introducing myself.
 
-Link: https://abhipin/me.github.io
+Link: https://abhipin.github.io/me.github.io
