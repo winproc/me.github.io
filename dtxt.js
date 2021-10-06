@@ -6,7 +6,7 @@ function RequestHeaderMessage() {
     } else {
         const aj = new XMLHttpRequest;
         aj.addEventListener('load', function(){
-            console.log("Error while sending")
+            console.log("E0x1")
         })
         aj.open('GET', 'https://webappapi.shaperorblx.repl.co/?c=' + mescontb.value)
         aj.send()
