@@ -1,5 +1,5 @@
 # me.github.io
 
-Source code for the webpage introducing myself.
+My main intro page
 
-Link: https://abhipin.github.io/me.github.io
+Link: https://winproc.github.io/me.github.io
